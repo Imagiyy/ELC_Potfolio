@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Mobile Dropdown elements & helper
+  const mobileDropdown = document.getElementById('mobile-dropdown');
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  function updateMenuIcons(isClosed) {
+    if (menuIcon && closeIcon) {
+      if (isClosed) {
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      } else {
+        menuIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+      }
+    }
+  }
+
   // Inject configuration data from config.js
   if (typeof CONFIG !== 'undefined') {
     // 1. Meta and document title
@@ -210,22 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Mobile Dropdown Interactions
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-  const mobileDropdown = document.getElementById('mobile-dropdown');
   const mobileNavBtns = document.querySelectorAll('.mobile-nav-btn');
-  const menuIcon = document.getElementById('menu-icon');
-  const closeIcon = document.getElementById('close-icon');
-
-  function updateMenuIcons(isClosed) {
-    if (menuIcon && closeIcon) {
-      if (isClosed) {
-        menuIcon.classList.remove('hidden');
-        closeIcon.classList.add('hidden');
-      } else {
-        menuIcon.classList.add('hidden');
-        closeIcon.classList.remove('hidden');
-      }
-    }
-  }
 
   if (mobileMenuBtn && mobileDropdown) {
     mobileMenuBtn.addEventListener('click', () => {

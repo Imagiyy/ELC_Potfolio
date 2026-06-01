@@ -18,8 +18,11 @@
 <body
   class="bg-zinc-950 text-zinc-100 min-h-screen relative overflow-x-hidden selection:bg-violet-500/30 selection:text-violet-200">
 
-  <!-- Background Graphic Texture -->
-  <div class="absolute inset-0 professional-grid-bg pointer-events-none z-0"></div>
+  <!-- Mobile Layout Wrapper to prevent overflow and empty space -->
+  <div class="relative w-full min-h-screen overflow-hidden flex flex-col">
+
+    <!-- Background Graphic Texture -->
+    <div class="absolute inset-0 professional-grid-bg pointer-events-none z-0"></div>
 
   <!-- Ambient highlights -->
   <div
@@ -1150,6 +1153,8 @@
 
     </div>
   </footer>
+
+  </div> <!-- End Mobile Layout Wrapper -->
 
   <!-- Interactivity Script -->
   <script src="script.js"></script>
