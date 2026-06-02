@@ -81,7 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
           background: radial-gradient(circle at center, rgba(${sRgb.r}, ${sRgb.g}, ${sRgb.b}, 0.035), transparent 75%);
         }
         .footer-glow {
-          background: linear-gradient(to top, rgba(${pRgb.r}, ${pRgb.g}, ${pRgb.b}, 0.18) 0%, rgba(${pRgb.r}, ${pRgb.g}, ${pRgb.b}, 0.03) 60%, transparent 100%) !important;
+          background: linear-gradient(to top, rgba(${pRgb.r}, ${pRgb.g}, ${pRgb.b}, 0.18) 0%, rgba(${pRgb.r}, ${pRgb.g}, ${pRgb.b}, 0.03) 60%, transparent 100%),
+                      linear-gradient(to top, #050507 20%, rgba(5, 5, 7, 0.75) 60%, transparent 100%) !important;
         }
         .project-card:hover, 
         .skill-card:hover, 

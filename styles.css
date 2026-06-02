@@ -122,7 +122,8 @@ body {
 
 /* Brighter ambient glow rising from the footer */
 .footer-glow {
-  background: linear-gradient(to top, rgba(139, 92, 246, 0.18) 0%, rgba(139, 92, 246, 0.03) 60%, transparent 100%) !important;
+  background: linear-gradient(to top, rgba(139, 92, 246, 0.18) 0%, rgba(139, 92, 246, 0.03) 60%, transparent 100%),
+              linear-gradient(to top, #050507 20%, rgba(5, 5, 7, 0.75) 60%, transparent 100%) !important;
 }
 
 /* Custom Scrollbars */
